@@ -1,0 +1,35 @@
+
+//rock paper scissors
+
+there are two players 
+
+player1
+player2
+
+each player must select  one option from :
+
+those choices are: rock, paper, scissors
+
+computer chooses a random value froma  list
+
+check to see if user wins:
+
+rules
+
+if user picks rock and computer picks scissors, user wins
+if user picks rock and computer picks scissors, user loses
+
+
+~ if the user wins, add 1 to their score
+if the computer wins, add 1 to their score
+
+if anyone reaches three points, the game is over
+
+
+paper > rock
+
+scissors > paper
+
+
+
+

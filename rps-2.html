@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Rock Paper Scissors Part 2
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="./stylesheet-RPS.css" />
+   
+</head>
+
+<body>
+<div class="clearfix container">
+  <header style="font-size:2.5rem; text-align:center;">Rock, Paper, Scissors</header>
+<header style="text-align:center; font-size:1.25rem;">Press 'r', 'p', or 's' to play</header>
+<div class = "row" id="gameinfo">
+  <div class="col-md-12 gamestats">
+    <table class="table" style="padding-top:2rem;">
+      <tr>
+        <td class="col-md-2 tablelabel">Your Wins: </td>
+        <td class="col-md-2" id="wins">0</td>
+        <td class="col-md-4" rowspan="4" id="smartText">-</td>
+        <td class="tablelabel">Current win streak: </td>
+        <td id="winStreak">0</td>
+      </tr>
+      <tr>
+        <td class="col-md-2 tablelabel">Robot Wins: </td>
+        <td class="col-md-2" id="losses">0</td>
+        <td class="col-md-2 tablelabel">Longest win streak: </td>
+        <td class="col-md-2"id="longWinStreak">0</td>
+      </tr>
+      <tr>
+        <td class="col-md-2 tablelabel">Ties: </td>
+        <td class="col-md-2" id="ties">0</td>
+        <td class="col-md-2 tablelabel">Current losing streak: </td>
+        <td class="col-md-2" id="loseStreak">0</td>
+      </tr>
+        <tr>
+          <td class="col-md-2 tablelabel">Results: </td>
+          <td class="col-md-2" id="recap">None yet. Press 'r', 'p', or 's' to begin.</td>
+          <td class="col-md-2 tablelabel">Longest losing streak: </td>
+          <td class="col-md-2" id="longLoseStreak">0</td>
+        </tr>
+     </table>
+    </div>
+  </div> <!--end gameinfo div-->
+<!--picture display section-->
+<div class="row">
+    <div class="col-md-4 ">
+    <img class="img-responsive resultpic" id="userPic" src="http://via.placeholder.com/200x200">
+      <!--player choice picture appears here-->
+    </div>
+    <div class="col-md-4">
+    <img class="img-responsive resultpic" id="winLosePic" src="http://via.placeholder.com/200x200">
+        <!--win/lose picture appears here-->
+    </div>
+    <div class="col-md-4" >
+    <img class="img-responsive resultpic" id="robotPic" src="http://via.placeholder.com/200x200">
+        <!--robot choice picture appears here-->
+    </div>
+
+</div><!--end picture display section-->
+<div class="row">
+ <div class="col-md-12 text-center" ><button type="button" class= "btn-lg" style="margin:auto" onClick="reset()">Reset</button></div> 
+</div><!--end button row-->
+
+<footer class="text-center" style="float:left; background-color:#696969">&copy; Copyright 2018 David Larson</footer>
+<script src="scripts.js"></script>
+<script type="text/javascript">
+  // Whenever any key is pressed, load the game page.
+  document.onkeypress =  function(event) {
+
+    gameStart(event);
+
+}
+</script>
+</div><!--close container tag-->
+</body>
+
+</html>

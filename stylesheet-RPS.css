@@ -1,0 +1,54 @@
+body {
+   
+    background-image:url("./background.png");
+    
+}
+
+
+
+table {
+    margin-bottom:2rem;
+    padding:2rem;
+
+}
+
+td {
+
+    word-wrap:true;
+    font-size:1rem;
+}
+
+.tablelabel {
+    
+    font-size:1rem;
+}
+
+button {
+    width:30%;
+}
+
+#gameinfo .gamestats {
+    background-color:rgba(124, 189, 124, 0.411);
+    margin-bottom:2rem;
+}
+
+#recap {
+    font-size:1rem;
+}
+
+img {
+    height:200px;
+    width:200px;
+}
+
+footer {
+    margin-top:2rem;
+    width:100%;
+}
+
+
+#smartText {
+    font-size:2rem;
+    font-weight:bold;
+}
+

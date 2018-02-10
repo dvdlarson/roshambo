@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Rock Paper Scissors Part 1</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="./stylesheet-RPS.css" />
+</head>
+
+<body>
+
+  <div id="intro">
+    <h1 style="text-align:center">Rock, Paper, Scissors</h1>
+    <h2>Rules:</h2>
+    <h3>
+        <ul>
+          <li>Rock beats scissors.</li>
+          <li>Paper beats rock.</li>
+          <li>Scissors beats paper.</li>
+        </ul>
+    </h3>
+    <h2>Instructions:</h2>
+    <h3>
+      <ul>
+        <li>Press 'r' to choose "rock"</li>
+        <li>Press 'p' to choose "paper"</li>
+        <li>Press 's' to choose "scissors"</li>
+      </ul>
+    </h3>
+    <div style="text-align:center; font-size:28">Press any key to begin!</div>
+  </div>
+
+  <script type="text/javascript">
+    // Whenever any key is pressed, load the game page.
+    document.onkeypress =  function() {
+      window.open("rps-2.html");
+}
+  </script>
+</body>
+</html>
